@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DAS Automóviles</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f4f5f3;
+      margin: 0;
+      padding: 0;
     }
     header {
       background-color: #111;
       color: #fff;
-      padding: 40px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
-    h1 {
-      margin: 0;
-    }
-    section {
+    main {
       padding: 20px;
     }
     h2 {
       color: #111;
     }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
     form {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
       margin-top: 20px;
     }
-    input, textarea, button {
-      margin-bottom: 15px;
+    input, textarea {
+      width: 100%;
       padding: 10px;
-      font-size: 1em;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
     }
     button {
       background-color: #111;
-      color: white;
+      color: #fff;
       border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
       cursor: pointer;
+      width: 100%;
     }
     footer {
       text-align: center;
-      padding: 15px;
-      background-color: #111;
-      color: white;
-      margin-top: 30px;
+      padding: 20px;
+      background-color: #f4f5f3;
+      font-size: 14px;
+      color: #777;
+    }
+    .moto {
+      margin-bottom: 20px;
+    }
+    .moto img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -57,25 +72,41 @@
     <p>Alquiler de motos, autos y gestoría en Posadas</p>
   </header>
 
-  <section>
-    <h2>Servicios</h2>
-    <ul>
-      <li>Alquiler de motos 0km</li>
-      <li>Alquiler de autos (próximamente)</li>
-      <li>Gestoría del automotor</li>
-      <li>Venta de vehículos seleccionados</li>
-    </ul>
-  </section>
+  <main>
+    <section>
+      <h2>Servicios</h2>
+      <ul>
+        <li>Alquiler de motos 0km</li>
+        <li>Alquiler de autos (próximamente)</li>
+        <li>Gestoría del automotor</li>
+        <li>Venta de vehículos seleccionados</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Contacto</h2>
-    <form>
-      <label>Nombre:<br><input type="text" name="nombre" required /></label>
-      <label>Email:<br><input type="email" name="email" required /></label>
-      <label>Mensaje:<br><textarea name="mensaje" rows="4" required></textarea></label>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <section>
+      <h2>Motos disponibles</h2>
+
+      <div class="moto">
+        <img src="keller_crono_blue.jpg" alt="Keller Crono 110 azul">
+        <p><strong>Keller Crono 110</strong><br>Tarifa: $20.000 por día</p>
+      </div>
+
+      <div class="moto">
+        <img src="zanella_due_grey.jpg" alt="Zanella Due 110 gris">
+        <p><strong>Zanella Due 110</strong><br>Tarifa: $20.000 por día</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <form>
+        <label>Nombre:<br><input type="text" name="nombre"></label>
+        <label>Email:<br><input type="email" name="email"></label>
+        <label>Mensaje:<br><textarea name="mensaje" rows="4"></textarea></label>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 DAS Automóviles</p>
