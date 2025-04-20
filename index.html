@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAS Automóviles</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f6f6f6;
+      color: #222;
+    }
+    header, footer {
+      background-color: #1c1c1c;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+    section {
+      padding: 2em;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea, button {
+      margin-bottom: 1em;
+      padding: 0.7em;
+      font-size: 1em;
+    }
+    button {
+      background-color: #1c1c1c;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DAS Automóviles</h1>
+    <p>Alquiler de motos, autos y gestoría en Posadas</p>
+  </header>
+
+  <section>
+    <h2>Servicios</h2>
+    <ul>
+      <li>Alquiler de motos 0km</li>
+      <li>Alquiler de autos (próximamente)</li>
+      <li>Gestoría del automotor</li>
+      <li>Venta de vehículos seleccionados</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contacto</h2>
+    <form action="https://formsubmit.co/dantejavier278@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Nombre" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DAS Automóviles - Posadas, Misiones</p>
+  </footer>
+</body>
+</html>
