@@ -7,109 +7,127 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f5f3;
+      background-color: #f6f6f0;
       margin: 0;
       padding: 0;
     }
+
     header {
       background-color: #111;
-      color: #fff;
-      padding: 30px 20px;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
-    main {
-      padding: 20px;
+
+    section {
+      padding: 30px 20px;
     }
+
     h2 {
       color: #111;
+      font-size: 24px;
+      margin-bottom: 10px;
     }
+
     ul {
-      list-style: disc;
+      list-style-type: disc;
       padding-left: 20px;
     }
-    form {
-      margin-top: 20px;
+
+    .moto {
+      margin-bottom: 30px;
     }
-    input, textarea {
+
+    .moto img {
       width: 100%;
-      padding: 10px;
-      margin-top: 8px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
+      max-width: 350px;
+      border-radius: 8px;
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
     button {
       background-color: #111;
-      color: #fff;
+      color: white;
+      padding: 12px;
       border: none;
-      padding: 12px 20px;
+      border-radius: 4px;
       font-size: 16px;
-      border-radius: 5px;
       cursor: pointer;
-      width: 100%;
     }
+
     footer {
+      background-color: #111;
+      color: white;
       text-align: center;
       padding: 20px;
-      background-color: #f4f5f3;
-      font-size: 14px;
-      color: #777;
-    }
-    .moto {
-      margin-bottom: 20px;
-    }
-    .moto img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>DAS Automóviles</h1>
     <p>Alquiler de motos, autos y gestoría en Posadas</p>
   </header>
 
-  <main>
-    <section>
-      <h2>Servicios</h2>
-      <ul>
-        <li>Alquiler de motos 0km</li>
-        <li>Alquiler de autos (próximamente)</li>
-        <li>Gestoría del automotor</li>
-        <li>Venta de vehículos seleccionados</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Servicios</h2>
+    <ul>
+      <li>Alquiler de motos 0km</li>
+      <li>Alquiler de autos (próximamente)</li>
+      <li>Gestoría del automotor</li>
+      <li>Venta de vehículos seleccionados</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Motos disponibles</h2>
+  <section>
+    <h2>Motos disponibles</h2>
 
-      <div class="moto">
-        <img src="keller_crono_blue.jpg" alt="Keller Crono 110 azul">
-        <p><strong>Keller Crono 110</strong><br>Tarifa: $20.000 por día</p>
-      </div>
+    <div class="moto">
+      <img src="keller-crono-110.png" alt="Keller Crono 110">
+      <h3>Keller Crono 110</h3>
+      <p>Tarifa: $20.000 por día</p>
+    </div>
 
-      <div class="moto">
-        <img src="zanella_due_grey.jpg" alt="Zanella Due 110 gris">
-        <p><strong>Zanella Due 110</strong><br>Tarifa: $20.000 por día</p>
-      </div>
-    </section>
+    <div class="moto">
+      <img src="zanella-due-110.png" alt="Zanella Due 110">
+      <h3>Zanella Due 110</h3>
+      <p>Tarifa: $20.000 por día</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>Contacto</h2>
-      <form>
-        <label>Nombre:<br><input type="text" name="nombre"></label>
-        <label>Email:<br><input type="email" name="email"></label>
-        <label>Mensaje:<br><textarea name="mensaje" rows="4"></textarea></label>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+  <section>
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
   <footer>
     <p>&copy; 2025 DAS Automóviles</p>
   </footer>
+
 </body>
 </html>
